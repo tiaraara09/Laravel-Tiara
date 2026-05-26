@@ -23,7 +23,7 @@
             <tr>
                 <td>{{ $student->nim }}</td>
                 <td>{{ $student->name }}</td>
-                <td>{{ $student->major->name }}</td>
+                <td>{{ $student->major->name ?? '-' }}</td>
                 <td>
                     @foreach($student->subjects as $subject)
                         <span class="badge bg-secondary me-1">{{ $subject->name }}</span>
