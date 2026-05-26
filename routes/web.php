@@ -8,3 +8,5 @@ use Illuminate\Support\Facades\Route;
     return redirect()->route('students.index');
     });
         Route::resource('students', StudentController::class);
+
+        //routes/web.php
